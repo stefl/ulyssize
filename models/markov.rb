@@ -14,7 +14,7 @@ class Markov
 
     @rand_gen = Random.new
 
-    @db = Mongo::Connection.new("localhost", 27017).db("silly-markov")
+    @db = MONGO_CONNECTION #Mongo::Connection.new("localhost", 27017).db("silly-markov")
   end
 
 
