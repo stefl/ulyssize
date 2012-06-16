@@ -21,6 +21,7 @@ gem "compass", "0.12.2.rc.0"
 gem "susy", "1.0.rc.0"
 gem 'unicorn'
 gem 'sassy-buttons'
+gem 'simplehttp'
 
 # Or Padrino Edge
 # gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'

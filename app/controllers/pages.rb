@@ -14,11 +14,15 @@ Ulyssize.controllers :pages do
     @page = Page.all.skip(rand(Page.all.count-1)).first
     redirect url_for(:pages, :show, :id => @page.id )
   end
-  
+
   get :generate, :map => "/generate" do
-    page_text = Markov.new.generate_page("ulysses_ascii.txt")
-    @page = Page.create(:body => page_text)
+    @page = Page.generate
     redirect url_for(:pages, :show, :id => @page.id )
+  end
+
+  post :create, :map => "/pages" do
+    @page = Page.create(:body => params[:body])
+    "Thanks"
   end
   
 end

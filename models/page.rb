@@ -4,4 +4,8 @@ class Page
 
   field :body
 
+  def self.generate
+    page_text = Markov.new.generate_page("ulysses_ascii.txt")
+    Page.create(:body => page_text)
+  end
 end
