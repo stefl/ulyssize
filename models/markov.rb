@@ -14,7 +14,7 @@ class Markov
 
     @rand_gen = Random.new
 
-    @db = MONGO_CONNECTION #Mongo::Connection.new("localhost", 27017).db("silly-markov")
+    @db = Mongoid.database #Mongo::Connection.new("localhost", 27017).db("silly-markov")
   end
 
 
@@ -62,8 +62,12 @@ class Markov
           rand_n -= count
           if rand_n <= 0
             next_word = next_word.gsub(/:dot:/, ".")
-            paragraph.chop! if @punct.match(next_word)
-            paragraph += "#{next_word} "
+            if @punct.match(next_word)
+              paragraph.chop! 
+              paragraph += "#{next_word} "
+            else
+              paragraph += "#{next_word} "
+            end
             puts next_word
             new_word = next_word
             break

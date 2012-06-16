@@ -3,6 +3,7 @@
 @import "compass/css3";
 @import "compass/typography/vertical_rhythm";
 @import "compass/utilities/links/link-colors";
+@import "sassy-buttons";
 
 $total-columns  : 12;             // a 12-column grid
 $column-width   : 4em;            // each column is 4em wide
@@ -18,8 +19,8 @@ $media-layout: 30em 12 60em;// Use 12 cols between min 30em & max 60em.
 $media-layout: 60em 12 30em;// Same. Larger length will always be max-width.
 $media-layout: 12 lt-ie9;  // Output is included under `.lt-ie9` class,
 $container-style: magic;
-$background-color: #f8faf4;
-$link-color:   #8a4945;
+$background-color: #e8f0f1;
+$link-color:   #8a9a7a;
 
 @import "susy";
 
@@ -94,7 +95,7 @@ header#header {
       font-family: "athelas", serif;
       font-weight: normal;
       @include at-breakpoint(60em 12) { 
-        @include adjust-font-size-to($base-font-size * 8, $lines:4);
+        @include adjust-font-size-to($base-font-size * 4, $lines:2);
       }
     }
   }
@@ -103,6 +104,7 @@ header#header {
     font-weight: 200;
     @include adjust-font-size-to($base-font-size * 1, $lines:1);
     text-weight: light;
+    font-style: italic;
     text-align: center;
     color: darken($background-color,40);
     @include at-breakpoint(60em 12) { 
@@ -116,7 +118,7 @@ header#header {
 
 article {
   background-color: rgba(255,255,255,0.7);
-  @include box-shadow(rgba(0,0,0,0.05) 0px 0px 8px);
+  @include box-shadow(rgba(0,0,0,0.1) 0px 0px 12px);
   @include padding-leader(1);
   @include padding-trailer(1);
   padding-left: 0.5em;
@@ -145,4 +147,23 @@ p {
     @include leader;  
   }
   @include trailer;
+}
+
+#another {
+  text-align: center;
+  @include leader(1);
+}
+
+.btn {
+  @include sassy-button("shiny", 15px, 26px, #ffd71a, #ffaa1a);
+  text-decoration:none;
+  color: #222 !important;
+  &:visited {
+    color: #222 !important;
+  }
+}
+
+footer {
+  @include padding-leader(1);
+  @include padding-trailer(1);
 }
