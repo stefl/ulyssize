@@ -65,21 +65,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 61, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
-  font-size: 100%;
+  font-size: 112.5%;
 }
 
 /* line 64, ../../../../Users/stef/.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2.rc.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 1.333em;
 }
 
-/* line 29, ../../app/stylesheets/application.scss */
+/* line 30, ../../app/stylesheets/application.scss */
 body {
   background-color: #e8f0f1;
   color: #273234;
 }
-/* line 31, ../../app/stylesheets/application.scss */
+/* line 32, ../../app/stylesheets/application.scss */
 body a {
   color: #8a9a7a;
 }
@@ -99,12 +99,12 @@ body a:hover {
 body a:active {
   color: #b0bba5;
 }
-/* line 34, ../../app/stylesheets/application.scss */
+/* line 35, ../../app/stylesheets/application.scss */
 body h1 a {
   text-decoration: none;
 }
 
-/* line 40, ../../app/stylesheets/application.scss */
+/* line 41, ../../app/stylesheets/application.scss */
 .page {
   font-family: "athelas",serif;
   *zoom: 1;
@@ -121,11 +121,11 @@ body h1 a {
   display: table;
   clear: both;
 }
-/* line 44, ../../app/stylesheets/application.scss */
+/* line 45, ../../app/stylesheets/application.scss */
 .page header {
   clear: both;
 }
-/* line 48, ../../app/stylesheets/application.scss */
+/* line 49, ../../app/stylesheets/application.scss */
 .page footer {
   clear: both;
   text-align: center;
@@ -134,26 +134,26 @@ body h1 a {
   margin-right: auto;
   #margin-left: auto;
   display: block;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.333em;
+  margin-bottom: 1.333em;
 }
-/* line 56, ../../app/stylesheets/application.scss */
+/* line 57, ../../app/stylesheets/application.scss */
 .page nav p {
   text-align: center;
 }
-@media (min-width: 60em) {
-  /* line 56, ../../app/stylesheets/application.scss */
+@media (min-width: 67.5em) {
+  /* line 57, ../../app/stylesheets/application.scss */
   .page nav p {
     text-align: left;
   }
 }
-/* line 63, ../../app/stylesheets/application.scss */
+/* line 64, ../../app/stylesheets/application.scss */
 .page .twitter-follow-button {
   position: relative;
   top: 6px;
 }
-@media (min-width: 60em) {
-  /* line 69, ../../app/stylesheets/application.scss */
+@media (min-width: 67.5em) {
+  /* line 70, ../../app/stylesheets/application.scss */
   .page nav {
     width: 15.254%;
     float: left;
@@ -164,7 +164,7 @@ body h1 a {
     #margin-left: -1em;
     display: inline;
   }
-  /* line 73, ../../app/stylesheets/application.scss */
+  /* line 74, ../../app/stylesheets/application.scss */
   .page .content {
     padding-left: 16.949%;
     width: 66.102%;
@@ -174,110 +174,110 @@ body h1 a {
   }
 }
 
-/* line 80, ../../app/stylesheets/application.scss */
+/* line 81, ../../app/stylesheets/application.scss */
 h1 {
   font-size: 2em;
-  line-height: 1.5em;
+  line-height: 1.333em;
   font-family: "athelas", serif;
   font-weight: 100;
 }
-@media (min-width: 60em) {
-  /* line 80, ../../app/stylesheets/application.scss */
+@media (min-width: 67.5em) {
+  /* line 81, ../../app/stylesheets/application.scss */
   h1 {
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: 1.333em;
   }
 }
 
-/* line 90, ../../app/stylesheets/application.scss */
+/* line 91, ../../app/stylesheets/application.scss */
 header#header {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  margin-top: 1.5em;
+  padding-top: 1.333em;
+  padding-bottom: 1.333em;
+  margin-top: 1.333em;
 }
-/* line 92, ../../app/stylesheets/application.scss */
+/* line 93, ../../app/stylesheets/application.scss */
 header#header h1#logo {
   font-size: 4em;
-  line-height: 0.75em;
+  line-height: 0.667em;
   text-align: center;
   font-family: "athelas", serif;
   font-weight: normal;
 }
-@media (min-width: 60em) {
-  /* line 92, ../../app/stylesheets/application.scss */
+@media (min-width: 67.5em) {
+  /* line 93, ../../app/stylesheets/application.scss */
   header#header h1#logo {
     font-size: 4em;
-    line-height: 0.75em;
+    line-height: 0.667em;
   }
 }
-/* line 102, ../../app/stylesheets/application.scss */
+/* line 103, ../../app/stylesheets/application.scss */
 header#header h2 {
   font-family: "athelas", serif;
   font-weight: 200;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.333em;
   text-weight: light;
   font-style: italic;
   text-align: center;
   color: #699da4;
 }
-@media (min-width: 60em) {
-  /* line 102, ../../app/stylesheets/application.scss */
+@media (min-width: 67.5em) {
+  /* line 103, ../../app/stylesheets/application.scss */
   header#header h2 {
     font-size: 1.33em;
-    line-height: 3.383em;
+    line-height: 3.008em;
   }
 }
 
-/* line 119, ../../app/stylesheets/application.scss */
+/* line 120, ../../app/stylesheets/application.scss */
 article {
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.333em;
+  padding-bottom: 1.333em;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-@media (min-width: 60em) {
-  /* line 119, ../../app/stylesheets/application.scss */
+@media (min-width: 67.5em) {
+  /* line 120, ../../app/stylesheets/application.scss */
   article {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
 }
-/* line 130, ../../app/stylesheets/application.scss */
+/* line 131, ../../app/stylesheets/application.scss */
 article header {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.333em;
 }
-/* line 134, ../../app/stylesheets/application.scss */
+/* line 135, ../../app/stylesheets/application.scss */
 article h1 a, article h1 a:visited {
   color: #528288;
 }
-/* line 138, ../../app/stylesheets/application.scss */
+/* line 139, ../../app/stylesheets/application.scss */
 article h2.comments {
   text-align: center;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.333em;
+  margin-bottom: 1.333em;
 }
 
-/* line 145, ../../app/stylesheets/application.scss */
-p {
-  margin-bottom: 1.5em;
-}
 /* line 146, ../../app/stylesheets/application.scss */
+p {
+  margin-bottom: 1.333em;
+}
+/* line 147, ../../app/stylesheets/application.scss */
 p:first-child {
-  margin-top: 1.5em;
+  margin-top: 1.333em;
 }
 
-/* line 152, ../../app/stylesheets/application.scss */
+/* line 153, ../../app/stylesheets/application.scss */
 #another {
   text-align: center;
-  margin-top: 1.5em;
+  margin-top: 1.333em;
 }
 
-/* line 157, ../../app/stylesheets/application.scss */
+/* line 158, ../../app/stylesheets/application.scss */
 .btn {
   font-size: 26px;
   padding: 0.3em 1.5em;
@@ -321,13 +321,13 @@ p:first-child {
   -moz-box-shadow: #f09700 0 1px 2px inset;
   box-shadow: #f09700 0 1px 2px inset;
 }
-/* line 161, ../../app/stylesheets/application.scss */
+/* line 162, ../../app/stylesheets/application.scss */
 .btn:visited {
   color: #222 !important;
 }
 
-/* line 166, ../../app/stylesheets/application.scss */
+/* line 167, ../../app/stylesheets/application.scss */
 footer {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.333em;
+  padding-bottom: 1.333em;
 }
