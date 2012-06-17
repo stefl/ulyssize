@@ -5,6 +5,11 @@ Ulyssize.controllers :pages do
     render :"pages/show"
   end
 
+  post :create, :map => "/pages" do
+    @page = Page.create(:body => params[:body])
+    "Thanks"
+  end
+
   get :show, :map => "/pages/:id" do
     @page = Page.find(params[:id])
     render :"pages/show"
@@ -18,11 +23,6 @@ Ulyssize.controllers :pages do
   get :generate, :map => "/generate" do
     @page = Page.generate
     redirect url_for(:pages, :show, :id => @page.id )
-  end
-
-  post :create, :map => "/pages" do
-    @page = Page.create(:body => params[:body])
-    "Thanks"
   end
   
 end
